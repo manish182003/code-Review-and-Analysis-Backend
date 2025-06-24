@@ -50,18 +50,21 @@ Welcome to the backend of the **Code Review and Analysis** project! This Node.js
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**:
+
    ```bash
    git clone <repository-url>
    cd code-review-backend
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**:
    Create a `.env` file in the root directory and add:
+
    ```plaintext
    PORT=5000
    MONGO_URI=<your-mongodb-uri>
@@ -77,13 +80,13 @@ Welcome to the backend of the **Code Review and Analysis** project! This Node.js
 
 ## 📡 API Endpoints
 
-| Method | Endpoint                | Description                     | Auth Required |
-|--------|-------------------------|---------------------------------|----------------|
-| POST   | `/auth/register`        | Register a new user             | No             |
-| POST   | `/auth/login`           | Login and get JWT               | No             |
-| POST   | `/code/review`          | Submit code for review          | Yes (or guest) |
-| POST   | `/code/docs`            | Generate documentation          | Yes (or guest) |
-| POST   | `/code/complexity`      | Analyze code complexity         | Yes (or guest) |
+| Method | Endpoint           | Description             | Auth Required  |
+| ------ | ------------------ | ----------------------- | -------------- |
+| POST   | `/auth/register`   | Register a new user     | No             |
+| POST   | `/auth/login`      | Login and get JWT       | No             |
+| POST   | `/code/review`     | Submit code for review  | Yes (or guest) |
+| POST   | `/code/docs`       | Generate documentation  | Yes (or guest) |
+| POST   | `/code/complexity` | Analyze code complexity | Yes (or guest) |
 
 **Guest Access**: Limited to 3 requests without authentication.
 
@@ -95,6 +98,7 @@ Welcome to the backend of the **Code Review and Analysis** project! This Node.js
 ## 🤖 AI Prompts
 
 The backend uses Cohere AI with tailored prompts to:
+
 - Perform code reviews with suggestions.
 - Generate markdown-based documentation.
 - Analyze code complexity metrics.
