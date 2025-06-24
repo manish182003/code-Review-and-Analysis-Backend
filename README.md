@@ -66,7 +66,7 @@ Welcome to the backend of the **Code Review and Analysis** project! This Node.js
    Create a `.env` file in the root directory and add:
 
    ```plaintext
-   PORT=5000
+   PORT=3000
    MONGO_URI=<your-mongodb-uri>
    JWT_SECRET=<your-jwt-secret>
    COHERE_API_KEY=<your-cohere-api-key>
